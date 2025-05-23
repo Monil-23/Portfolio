@@ -76,19 +76,17 @@
 				})
 				.each(function() {
 
-					var	$this = $(this),
-						id = $this.attr('href');
-					// ← only process internal anchors
-    				if (href.charAt(0) !== '#')
+					var $this = $(this);
+    				var id    = $this.attr('href');        // ← grab href into id
+
+    				// Only process internal anchors
+    				if (id.charAt(0) !== '#')
       				   return;
 
-    				var $section = $(href);
-
-
-					// No section for this link? Bail.
+					var $section = $(id);
 					if ($section.length < 1)
 						return;
-
+					
 					// Scrollex.
 						$section.scrollex({
 							mode: 'middle',
