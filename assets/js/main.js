@@ -77,12 +77,17 @@
 				.each(function() {
 
 					var	$this = $(this),
-						id = $this.attr('href'),
-						$section = $(id);
+						id = $this.attr('href');
+					// ← only process internal anchors
+    				if (href.charAt(0) !== '#')
+      				   return;
+
+    				var $section = $(href);
+
 
 					// No section for this link? Bail.
-						if ($section.length < 1)
-							return;
+					if ($section.length < 1)
+						return;
 
 					// Scrollex.
 						$section.scrollex({
