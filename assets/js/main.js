@@ -86,7 +86,7 @@
 					var $section = $(id);
 					if ($section.length < 1)
 						return;
-					
+
 					// Scrollex.
 						$section.scrollex({
 							mode: 'middle',
@@ -164,7 +164,7 @@ async function updateViewCount() {
   try {
     const response = await fetch("https://fvu3xt5b7mbane5ityanmlsvcu0pziyq.lambda-url.us-east-2.on.aws/");
     const data = await response.json();
-    counterElement.innerHTML = `👀 Views: ${data.views}`;
+    counterElement.innerHTML = `Views: ${data.views}`;
   } catch (error) {
     console.error("Error fetching views:", error);
     counterElement.innerHTML = "👀 Views: N/A";
