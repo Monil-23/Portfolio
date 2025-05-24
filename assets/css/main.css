@@ -2702,8 +2702,8 @@ input, select, textarea {
 		justify-content: space-between;
 		background: #3a8dde;
 		color: #d2f2e9;
-		height: 100%;
-		overflow-y: auto;
+		height: auto;
+		overflow-y: visible;
 		position: fixed;
 		text-align: center;
 		top: 0;
