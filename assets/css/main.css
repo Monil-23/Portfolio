@@ -2699,7 +2699,7 @@ input, select, textarea {
 		-moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
-		justify-content: flex-start;
+		justify-content: space-between;
 		background: #3a8dde;
 		color: #d2f2e9;
 		height: 100%;
